@@ -91,12 +91,6 @@ button:active {
     color: #38a1f3;
     
 }
-.button:hover{
-    color: #38a1f3;
-}
-
-
-
 @media (max-width: 600px) {
     .container {
         width: 80%;
