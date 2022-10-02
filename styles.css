@@ -1,35 +1,49 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Roboto', sans-serif; 
+    font-family: "Roboto", sans-serif;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
-     min-height: 100vh; 
+    min-height: 100vh;
     text-align: center;
-    background-color: rgb(192, 234, 242);
+    position: relative;
 }
 
-.container{
+.bgImage {
+    position: absolute;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    background-image: url("./images/bg.jpg");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(5px);
+    z-index: -2;
+    transition: 0.7s background-image ease-in-out;
+}
+
+.container {
     width: 500px;
     height: 450px;
 }
 
-.heading{
+.heading {
     background-color: rgb(240, 198, 255);
     color: rgb(5, 5, 5);
     width: 80%;
-    margin: 50px  auto 10px;
+    margin: 50px auto 10px;
     padding: 5px;
     border: 2px solid #eee;
     border-radius: 10px 10px;
 }
 
-.main-content{
+.main-content {
     background-color: #eee;
     color: black;
     padding: 50px 40px;
@@ -39,19 +53,19 @@ body{
     box-shadow: 0 0 10px;
 }
 
-.quote{
+.quote {
     font-size: 1.2rem;
     line-height: 1.5;
 }
 
-.person{
+.person {
     color: rgb(2, 99, 23);
     font-size: 1.5rem;
     margin-top: 20px;
     text-transform: uppercase;
 }
 
-.button{
+.button {
     padding: 5px 10px;
     background-color: rgb(41, 40, 40);
     color: #fff;
@@ -60,12 +74,12 @@ body{
     font-size: 1.3rem;
 }
 
-button:active{
+button:active {
     background-color: lightblue;
 }
 
-@media (max-width: 600px){
-    .container{
+@media (max-width: 600px) {
+    .container {
         width: 80%;
     }
 }
