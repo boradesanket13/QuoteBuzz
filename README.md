@@ -1,4 +1,4 @@
-﻿# Random-quote-generator
+﻿# QuoteBuzz
 
 This application generates a random quote at very click event of the button 'New Quote'
 
