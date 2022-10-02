@@ -87,6 +87,11 @@ button:active {
     color: #38a1f3;
     
 }
+.next-button:hover {
+    color: #38a1f3;
+    
+}
+
 
 
 @media (max-width: 600px) {
