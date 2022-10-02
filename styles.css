@@ -13,20 +13,10 @@ body {
     text-align: center;
     background-color: rgb(192, 234, 242);
     margin: 0;
-    position: relative;
-}
-
-.bgImage {
-    position: absolute;
-    min-height: 100vh;
-    height: 100%;
-    width: 100%;
     background-image: url("./images/bg.jpg");
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: blur(5px);
-    z-index: -2;
     transition: 0.7s background-image ease-in-out;
 }
 

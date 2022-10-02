@@ -4,7 +4,7 @@ let person = document.querySelector('.person');
 const twitterBtn = document.getElementById('twitter');
 const quoteText = document.getElementById('quote');
 const authorText = document.getElementById('person');
-let bgImage = document.querySelector(".bgImage");
+const body = document.body;
 
 const quotes = [
   {
@@ -427,14 +427,13 @@ const backgroundImages = [
   'bg8.jpeg',
   'bg9.jpeg',
   'bg10.jpeg',
-  'bg11.jpeg',
-  'bg12.jpg'
+  'bg11.jpg',
 ];
 
 btn.addEventListener('click', () => {
   let randomQuote = Math.floor(Math.random() * quotes.length);
   let randomImage = Math.floor(Math.random() * backgroundImages.length);
-  bgImage.style.backgroundImage = `url('./images/${backgroundImages[randomImage]}')`;
+  body.style.backgroundImage = `url('./images/${backgroundImages[randomImage]}')`;
 
   quote.innerText = quotes[randomQuote].quote;
   person.innerText = quotes[randomQuote].person;
