@@ -12,28 +12,57 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
+
+<!--     TailwindCss-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#1F2937',
+                        'secondary': '#10B981',
+                        'danger': '#EF4444',
+                        'glassmorphism': 'rgba(255, 255, 255, 0.4)',
+                    },
+                    fontFamily: {
+                        'sans': ['Roboto', 'sans-serif'],
+                        'serif': ['Gilda Display', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
     <!-- Random Quote Generator -->
-    <div class="container">
-        <div class="heading">
-            <h2>QuoteBuzz</h2>
-        </div>
+    <div class="container bg-glassmorphism w-1/2 px-5 rounded-3xl flex flex-col py-20">
+<!--        <div class="bg-glassmorphism-light  mx-auto text-4xl">-->
+<!--            <h2>QuoteBuzz</h2>-->
+<!--        </div>-->
 
-        <div class="main-content">
-            <p class="quote" id="quote">
-                <q>I'm unpredictable, I never know where I'm going until I get there, I'm so random, I'm always
+        <div class="flex flex-col">
+
+            <p class=" font-light font-serif text-4xl cursor-default" id="quote">
+                <span class="text-5xl">❝</span>
+                 <span class="quote">I'm unpredictable, I never know where I'm going until I get there, I'm so random, I'm always
                     growing, learning, changing, I'm never the same person twice. But one thing you can be sure of about
-                    me; is I will always do exactly what I want to do.</q>
+                    me; is I will always do exactly what I want to do.</span>
+                <span class="text-5xl">❞</span>
             </p>
-            <p class="person" id="person">C. JoyBell C.</p>
-            <div class="button-container">
-                <button class="twitter-button" id="twitter" title="Tweet This!">
-                    <div><i class="fab fa-twitter" style="margin-right: 0.5rem;"></i>Tweet This</>
+            <div class="flex ml-auto font-serif">
+                <span class="text-3xl">—</span>
+                <p class="person" id="person">C. JoyBell C.</p>
+            </div>
+            <div class="flex mx-auto font-serif">
+                <button class="twitter-button mx-2 bg-black py-2 px-4 hover:scale-110 duration-200 text-white  shadow-md hover:shadow-lg" id="twitter" title="Tweet This!">
+                    <div><i class="fab fa-twitter mr-1"></i>Tweet This</>
                 </button>
-                <button class="button" id="new-quote">New Quote</button>
+                <button class="bg-black mx-2 py-2 px-4 hover:scale-110 duration-200 text-white  shadow-md hover:shadow-lg" id="new-quote">New Quote</button>
             </div>
         </div>
     </div>
