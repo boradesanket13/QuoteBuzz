@@ -15,7 +15,10 @@ demo: https://Sanket1308.github.io/javascript-quote-generator/
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 
-[![Contributors][contributors-shield]][contributors-url]
+# Contributors
+<a href="https://github.com/Sanket1308/javascript-quote-generator/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Sanket1308/javascript-quote-generator" />
+</a> <br>
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
