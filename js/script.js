@@ -481,6 +481,12 @@ const quotes = [
     person: 'Proverbs 3:5',
     keyword: 'god',
   },
+  {
+    quote:
+      '"I am not bound to win, but I am bound to be true. I am not bound to succeed, but I am bound to live up to what light I have."',
+    person: 'Abraham Lincoln',
+    keyword: 'live',
+  },
 ];
 
 // Tweet Quote
