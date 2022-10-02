@@ -11,6 +11,8 @@ body {
     align-items: center;
     min-height: 100vh;
     text-align: center;
+    background-color: rgb(192, 234, 242);
+    margin: 0;
     position: relative;
 }
 
@@ -65,17 +67,34 @@ body {
     text-transform: uppercase;
 }
 
-.button {
-    padding: 5px 10px;
-    background-color: rgb(41, 40, 40);
+button {
+    cursor: pointer;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 10px;
     color: #fff;
-    border-radius: 5px;
-    margin-top: 20px;
-    font-size: 1.3rem;
+    background: #333;
+    outline: none;
+    padding: 0.5rem 1.8rem;
+}
+
+.fa-twitter {
+    font-size: 1.5rem;
+}
+
+.button-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
 }
 
 button:active {
     background-color: lightblue;
+}
+
+.twitter-button:hover {
+    color: #38a1f3;
 }
 
 @media (max-width: 600px) {
