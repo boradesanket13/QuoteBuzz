@@ -17,7 +17,7 @@ body {
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: cover;
-    transition: 0.7s background-image ease-in-out;
+    transition: background-image 5s;
 }
 
 .container {
