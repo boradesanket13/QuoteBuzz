@@ -477,8 +477,8 @@ const quotes = [
   },
   {
     quote:
-      '"trust in the Lord with all your heart and lean not in your own understanding."',
-    person: 'Proverbs 3:5',
+      '"Trust in the Lord with all your heart and lean not in your own understanding."',
+    person: 'Clarissa Cline',
     keyword: 'god',
   },
 ];
