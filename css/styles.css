@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: "Roboto", sans-serif;
+    font-family: 'New Tegomin', serif;
 }
 
 body {
@@ -36,13 +38,15 @@ body {
 }
 
 .main-content {
-    background-color: #eee;
-    color: black;
+    background: transparent;
+    background-color: rgba(109, 108, 108, 0.45);
+    opacity: 2;
+    color: #fff;
     padding: 50px 40px;
     border-radius: 15px;
     width: 100%;
     height: auto;
-    box-shadow: 0 0 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,12 +55,14 @@ body {
 
 .quote {
     font-size: 1.2rem;
+    font-weight: 800;
     line-height: 1.5;
 }
 
 .person {
-    color: rgb(2, 99, 23);
+    color: rgb(255, 21, 21);
     font-size: 1.5rem;
+    font-weight: 900;
     margin-top: 20px;
     text-transform: uppercase;
 }
