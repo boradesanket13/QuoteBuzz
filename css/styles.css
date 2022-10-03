@@ -96,3 +96,29 @@ button:active {
         width: 80%;
     }
 }
+
+@media screen and (max-width: 530px) {
+    .container{
+        margin-bottom: 250px;
+    }
+    .button-container{
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+    #twitter{
+        padding: 0px;
+    }
+    #new-quote{
+        padding: 0px;
+    }
+}
+@media screen and (max-width: 300px) {
+    .button-container{
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+    
+}
+
