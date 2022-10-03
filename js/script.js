@@ -9,6 +9,13 @@ const body = document.body;
 const quotes = [
   {
     quote:
+      'A calm and modest life brings more happiness than the pursuit of success combined with constant restlessness.',
+    person: 'Albert Einstein',
+    keyword: 'motivation',
+  },
+  
+  {
+    quote:
       '"Some fail to bear in mind that everyone is sentenced to death. Death is a treacherous virus that strikes randomly. The only truth is that nobody is going to make it out alive. We are all living on probation and our expiry date is indefinite. "',
     person: 'Erik Pevernagie',
     keyword: 'death',
