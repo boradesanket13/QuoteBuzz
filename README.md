@@ -26,10 +26,11 @@ LIVE PROJECT SCREENSHOT:-
 <a href="https://github.com/Sanket1308/javascript-quote-generator/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Sanket1308/javascript-quote-generator" />
 </a> <br>
-[![Forks](https://img.shields.io/github/forks/Sanket1308/javascript-quote-generator)](https://github.com/Sanket1308/javascript-quote-generator/forks)
-[![Stargazers](https://img.shields.io/github/stars/Sanket1308/javascript-quote-generator)](https://github.com/Sanket1308/javascript-quote-generator/stars)
-[![Issues](https://img.shields.io/github/issues/Sanket1308/javascript-quote-generator)](https://github.com/Sanket1308/javascript-quote-generator/issues)
-[![MIT License](https://img.shields.io/github/license/Sanket1308/javascript-quote-generator?style=for-the-badge)]
+
+![Stargazers](https://img.shields.io/github/stars/Sanket1308/javascript-quote-generator)
+![Issues](https://img.shields.io/github/issues/Sanket1308/javascript-quote-generator)
+![MIT License](https://img.shields.io/github/license/Sanket1308/javascript-quote-generator?style=for-the-badge)
+![Forks](https://img.shields.io/github/forks/Sanket1308/javascript-quote-generator)
 
 # Contributing
 
