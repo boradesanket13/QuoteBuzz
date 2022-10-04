@@ -8,6 +8,203 @@ const body = document.body;
 
 const quotes = [
   {
+    quote:'“All our dreams can come true, if we have the courage to pursue them.” ',
+    person:'Walt Disney'
+  },
+  {
+    quote:'“The secret of getting ahead is getting started.” ',
+    person:'Mark Twain'
+  },
+  {
+    quote:'“I’ve missed more than 9,000 shots in my career. I’ve lost almost 300 games. 26 times I’ve been trusted to take the game winning shot and missed. I’ve failed over and over and over again in my life, and that is why I succeed.” ',
+    person:'Michael Jordan'
+  },
+  {
+    quote:'Don’t limit yourself. Many people limit themselves to what they think they can do. You can go as far as your mind lets you. What you believe, remember, you can achieve. ',
+    person:'Mary Kay Ash'
+  },
+  {
+    quote:'“The best time to plant a tree was 20 years ago. The second best time is now.” ',
+    person:'Chinese Proverb'
+  },
+  {
+    quote:'"Only the paranoid survive" ',
+    person:'Andy Grove'
+  },
+  {
+    quote:'“It’s hard to beat a person who never gives up.”',
+    person:'Babe Ruth'
+  },
+  {
+    quote:'““I wake up every morning and think to myself, ‘How far can I push this company in the next 24 hours.’”',
+    person:'Leah Busque'
+  },
+  {
+    quote:'“If people are doubting how far you can go, go so far that you can’t hear them anymore.” ',
+    person:'Michele Ruiz'
+  },
+  {
+    quote:'“We need to accept that we won’t always make the right decisions, that we’ll screw up royally sometimes―understanding that failure is not the opposite of success, it’s part of success.”',
+    person:'Arianna Huffington'
+  },
+  {
+    quote:'“Write it. Shoot it. Publish it. Crochet it. Sauté it. Whatever. MAKE.” ',
+    person:'Joss Whedon'
+  },
+  {
+    quote:'“You’ve gotta dance like there’s nobody watching, love like you’ll never be hurt, sing like there’s nobody listening, and live like it’s heaven on earth.”',
+    person:'William W. Purkey'
+  },
+  {
+    quote:'“Fairy tales are more than true: not because they tell us that dragons exist, but because they tell us that dragons can be beaten.”',
+    person:'Neil Gaiman'
+  },
+  {
+    quote:'“Everything you can imagine is real.”',
+    person:'Pablo Picasso'
+  },
+  {
+    quote:'“When one door of happiness closes, another opens; but often we look so long at the closed door that we do not see the one which has been opened for us.”',
+    person:'Helen Keller'
+  },
+  {
+    quote:'“Do one thing every day that scares you.”',
+    person:'Eleanor Roosevelt'
+  },
+  {
+    quote:'“It’s no use going back to yesterday, because I was a different person then.”',
+    person:'Lewis Carroll'
+  },
+  {
+    quote:'“Smart people learn from everything and everyone, average people from their experiences, stupid people already have all the answers.” ',
+    person:'Socrates'
+  },
+  {
+    quote:'“Happiness is not something ready made. It comes from your own actions.” ',
+    person:'Dalai Lama XIV'
+  },
+  {
+    quote:'“Whatever you are, be a good one.” ',
+    person:'Abraham Lincoln'
+  },
+  {
+    quote:'“The same boiling water that softens the potato hardens the egg. It’s what you’re made of. Not the circumstances.” ',
+    person:'Unknown'
+  },
+  {
+    quote:'“If we have the attitude that it’s going to be a great day it usually is.”',
+    person:'Catherine Pulsifier'
+  },
+  {
+    quote:'“Impossible is just an opinion.” ',
+    person:'Paulo Coelho'
+  },
+  {
+    quote:'“Your passion is waiting for your courage to catch up.”',
+    person:'Isabelle Lafleche'
+  },{
+    quote:'“Magic is believing in yourself. If you can make that happen, you can make anything happen.”',
+    person:'Johann Wolfgang Von Goethe'
+  },{
+    quote:'“If something is important enough, even if the odds are stacked against you, you should still do it.” ',
+    person:'Elon Musk'
+  },{
+    quote:'“Don’t be afraid to give up the good to go for the great.”',
+    person:'John D. Rockefeller'
+  },{
+    quote:'“It’s Monday … time to motivate and make dreams and goals happen. Let’s go!” ',
+    person:'Heather Stillufsen'
+  },{
+    quote:'“It was a Monday and they walked on a tightrope to the sun.”',
+    person:'Marcus Zusak'
+  },{
+    quote:'“Goodbye, blue Monday.”',
+    person:'Kurt Vonnegut'
+  },{
+    quote:'“So. Monday. We meet again. We will never be friends—but maybe we can move past our mutual enmity toward a more positive partnership.”',
+    person:'Julio-Alexi Genao'
+  },
+  {
+    quote:'“When life gives you Monday, dip it in glitter and sparkle all day.”',
+    person:'Ella Woodword'
+  },
+  {
+    quote:'“Oh! It’s Friday again. Share the love that was missing during the week. In a worthy moment of peace and bliss.”',
+    person:'S. O’Sade'
+  },
+  {
+    quote:'Friday sees more smiles than any other day of the workweek!',
+    person:'Kate Summers'
+  },
+  {
+    quote:'“Every Friday, I like to high five myself for getting through another week on little more than caffeine, willpower, and inappropriate humor.”',
+    person:'Nanea Hoffman'
+  },
+  {
+    quote:'“When you leave work on Friday, leave work. Don’t let technology follow you throughout your weekend (answering text messages and emails). Take a break. You will be more refreshed to begin the workweek if you have had a break.”',
+    person:'Catherine Pulsifer'
+  },
+  {
+    quote:'“Make Friday a day to celebrate work well done that you can be proud of knowing that you just didn’t put in time to the next paycheck.”',
+    person:'Byron Pulsifer'
+  },
+  {
+    quote:'“I challenge you to let every day be a Friday. Permit yourself to be happy every day.” ',
+    person:'Joel Osteen'
+  },
+  {
+    quote:'“This Friday, finish your work and be done. Look forward to the weekend and have some fun!”',
+    person:'Kate Summers'
+  },
+  {
+    quote:'“We are what we repeatedly do. Excellence, then, is not an act, but a habit.”',
+    person:'Aristotle'
+  },
+  {
+    quote:'“If you’re offered a seat on a rocket ship, don’t ask what seat! Just get on.”',
+    person:'Sheryl Sandberg'
+  },
+  {
+    quote:'“I always did something I was a little not ready to do. I think that’s how you grow. When there’s that moment of ‘Wow, I’m not really sure I can do this,’ and you push through those moments, that’s when you have a breakthrough.”',
+    person:'Marissa Mayer'
+  },
+  {
+    quote:'“If you hear a voice within you say, ‘You cannot paint,’ then by all means paint, and that voice will be silenced.”',
+    person:'Vincent Van Gogh'
+  },
+  {
+    quote:'“How wonderful it is that nobody need wait a single moment before starting to improve the world.”',
+    person:'Anne Frank'
+  },
+  {
+    quote:'“Some people want it to happen, some wish it would happen, others make it happen.” ',
+    person:'Michael Jordan'
+  },
+  {
+    quote:'“If you hire people just because they can do a job, they’ll work for your money. But if you hire people who believe what you believe, they’ll work for you with blood and sweat and tears.”',
+    person:'Simon Sinek'
+  },
+  {
+    quote:'“Very often, a change of self is needed more than a change of scene."',
+    person:'A.C. Benson'
+  },
+  {
+    quote:'“Leaders can let you fail and yet not let you be a failure.”',
+    person:'Stanley McChrystal'
+  },
+  {
+    quote:'“It’s not the load that breaks you down, it’s the way you carry it.”',
+    person:'Lou Holtz'
+  },
+  {
+    quote:'“The hard days are what make you stronger.”',
+    person:'Aly Raisman'
+  },
+  {
+    quote:'“If you believe it’ll work out, you’ll see opportunities. If you don’t believe it’ll work out, you’ll see obstacles.” ',
+    person:'Wayne Dyer'
+  },
+  {
     quote:
       '"Some fail to bear in mind that everyone is sentenced to death. Death is a treacherous virus that strikes randomly. The only truth is that nobody is going to make it out alive. We are all living on probation and our expiry date is indefinite. "',
     person: 'Erik Pevernagie',
