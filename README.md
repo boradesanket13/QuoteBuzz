@@ -29,8 +29,8 @@ LIVE PROJECT SCREENSHOT:-
 
 ![Stargazers](https://img.shields.io/github/stars/Sanket1308/javascript-quote-generator)
 ![Issues](https://img.shields.io/github/issues/Sanket1308/javascript-quote-generator)
-![MIT License](https://img.shields.io/github/license/Sanket1308/javascript-quote-generator?style=for-the-badge)
 ![Forks](https://img.shields.io/github/forks/Sanket1308/javascript-quote-generator)
+![MIT License](https://img.shields.io/github/license/Sanket1308/javascript-quote-generator?style=for-the-badge)
 
 # Contributing
 
