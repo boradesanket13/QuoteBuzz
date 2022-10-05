@@ -2,6 +2,7 @@ let btn = document.querySelector('#new-quote');
 let quote = document.querySelector('.quote');
 let person = document.querySelector('.person');
 const twitterBtn = document.getElementById('twitter');
+const copyBtn = document.getElementById('copy');
 const quoteText = document.getElementById('quote');
 const authorText = document.getElementById('person');
 const body = document.body;
@@ -498,6 +499,13 @@ function tweetQuote() {
   window.open(twitterUrl, '_blank');
 }
 
+// Copy Quote
+function copyQuote() {
+  const quote = quoteText.innerText;
+  const author = authorText.innerText;
+  navigator.clipboard.writeText(`${quote} - ${author}`);
+}
+
 const backgroundImages = [
   'bg.jpg',
   'bg2.jpeg',
@@ -551,3 +559,4 @@ btn.addEventListener('click', () => {
   fetchImages()
 });
 twitterBtn.addEventListener('click', tweetQuote);
+copyBtn.addEventListener('click', copyQuote)
