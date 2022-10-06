@@ -4,16 +4,22 @@ Now this project also welcomes contributions from like minded developers to impr
 Now the steps for contributing to this repo includes:
 
 1. Fork this repo simply by clicking Create a new fork as seen in the below screenshot.
+![image](https://user-images.githubusercontent.com/83940432/194363839-8c27e99b-fb4b-4755-be4f-6e9deb119ec8.png)
 2.Clone the repo in your local machine using the command
 git clone "url-of-the-forked-repo"
+
 3. Create a new branch having a descriptive name like what is the name of the feature that you want to add and how it would solve the existing issues by using this command in the shell
 git checkout -b "new-branch-name"
+
 4. After that write your code and use the following command to add those changes
 git add .
+
 5. Commit your changes by using the below command
 git commit -m "Add a suitable commit message"
+
 6.Finally add the changes to the new branch of the repo
 git push origin "new-branch-name"
+
 7.Finally open a pull request on github and wait for your changes to be reviewed and added by the project maintainers.
 
 Happy Hacking 😊😊
