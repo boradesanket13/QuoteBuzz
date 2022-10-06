@@ -1,12 +1,19 @@
-## Contributing
+Contributions to open source is an absolute must for beginner and newbie developers to sharpen their skills and also learn by doing. Moreover contributing to different open source projects helps in networking with like minded individuals. 
+Now this project also welcomes contributions from like minded developers to improve this web app and also enhance it. So if you notice any bug that is present in this app you can simply create a pull request by forking this repo and open an issue with the tag bug, similarly for enhancement you can open with tag enhancement and so on.
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Now the steps for contributing to this repo includes:
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+1. Fork this repo simply by clicking Create a new fork as seen in the below screenshot.
+2.Clone the repo in your local machine using the command
+git clone "url-of-the-forked-repo"
+3. Create a new branch having a descriptive name like what is the name of the feature that you want to add and how it would solve the existing issues by using this command in the shell
+git checkout -b "new-branch-name"
+4. After that write your code and use the following command to add those changes
+git add .
+5. Commit your changes by using the below command
+git commit -m "Add a suitable commit message"
+6.Finally add the changes to the new branch of the repo
+git push origin "new-branch-name"
+7.Finally open a pull request on github and wait for your changes to be reviewed and added by the project maintainers.
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+Happy Hacking 😊😊
