@@ -64,15 +64,21 @@ body {
 button {
     cursor: pointer;
     width: max-content;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     height: 2.5rem;
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
     color: #fff;
     background: #333;
     outline: none;
     padding: 0.5rem 1.8rem;
     margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+button i {
+    margin-right: 0.5rem;
 }
 
 .fa-twitter {
