@@ -5,17 +5,37 @@ Now this project also welcomes contributions from like minded developers to impr
 
 Now the steps for contributing to this repo includes:
 
-1. Fork this repo simply by clicking Create a new fork.
-2.Clone the repo in your local machine using the command
+1. In order to contribute to this repo at first check for existing issues under the Issues tab or add your own issue and wait for it to be assigned to you.
+2. Fork this repo simply by clicking Create a new fork.
+3.Clone the repo in your local machine using the command and change to the directory of repo by using cd command.
+```powershell
 git clone "url-of-the-forked-repo"
-3. Create a new branch having a descriptive name like what is the name of the feature that you want to add and how it would solve the existing issues by using this command in the shell
+```
+cd repo-name
+4. Before starting to make any changes in the local project diretcory always pull in the latest changes from the main repo to your repo on local directory using the following command belwo:
+```powershell
+git pull upstream master
+``` 
+or if the default branch of the main repo is main then use the below command
+```powershell
+git pull upstream main
+```
+5. Create a new branch having a descriptive name like what is the name of the feature that you want to add and how it would solve the existing issues by using this command in the shell
+```powershell
 git checkout -b "new-branch-name"
-4. After that write your code and use the following command to add those changes
+```
+6. After that write your code in your preffered IDE and use the following command to add those changes
+```powershell
 git add .
-5. Commit your changes by using the below command
+```
+7. Commit your changes by using the below command
+```powershell
 git commit -m "Add a suitable commit message"
-6.Finally add the changes to the new branch of the repo
+```
+8.Finally add the changes to the new branch of the repo
+```powershell
 git push origin "new-branch-name"
-7.Finally open a pull request on github and wait for your changes to be reviewed and added by the project maintainers.
+```
+9.Finally open a pull request on github by clicking on Compare and open a pull request and wait for your changes to be reviewed and added by the project maintainers.
 
 Happy Hacking 😊😊
