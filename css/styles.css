@@ -24,6 +24,7 @@ body {
 .container {
     width: 500px;
     height: 450px;
+    opacity: .90;
 }
 
 .heading {
@@ -81,6 +82,7 @@ button {
     margin-top: 0.5rem;
     display: flex;
     align-items: center;
+    opacity: .90;
 }
 
 button i {
@@ -98,6 +100,7 @@ button i {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    opacity: .90;
 }
 
 
