@@ -71,6 +71,7 @@ button {
     cursor: pointer;
     width: max-content;
     font-size: 0.8rem;
+    font-weight: bold;
     height: 2.5rem;
     border:1px solid black;
     border-radius: 80px;
@@ -109,12 +110,36 @@ button:active {
     background-color: lightblue;
 }
 
-.twitter-button:hover {
-    color: #38a1f3;
-    
+.twitter-button {
+    color: white;
+    background-color: #1D9BF0;
+    padding: 0 18px;
 }
-.button:hover{
-  color: #08273f;
+
+.twitter-button:hover {
+    color: black;
+    border: 2.5px solid rgb(42, 5, 249);
+}
+
+#new-quote {
+    background-color: #ffa400;
+    padding: 0 18px;
+}
+
+#new-quote:hover {
+    color: rgb(235, 230, 230);
+    border: 2.5px solid rgb(249, 74, 5);
+}
+
+#copy {
+    background-color: #6d6d6d;
+    padding: 0 32px;
+}
+
+#copy:hover {
+    background-color: #6d6d6d;
+    padding: 0 32px;
+    border: 2.5px solid rgb(10, 10, 10);
 }
 
 @media (max-width: 600px) {
