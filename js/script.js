@@ -81,6 +81,8 @@ btn.addEventListener("click", async () => {
   quote.innerText = quoteData.data.content;
   person.innerText = quoteData.data.author;
 });
+
 // Tweetquote
+
 twitterBtn.addEventListener('click', tweetQuote);
 copyBtn.addEventListener('click', copyQuote);
