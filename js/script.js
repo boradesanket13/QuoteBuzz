@@ -24,7 +24,7 @@ function copyQuote() {
   const author = authorText.innerText;
   navigator.clipboard.writeText(`${quote} - ${author}`);
 }
-//speechsynthesis of random quotes/data
+//speechsynthesis of Quotes
 soundBtn.addEventListener("click",()=>{
   let utterance = new SpeechSynthesisUtterance(`${quoteText.innerText} by ${authorText.innerText}`);
   speechSynthesis.speak(utterance);
