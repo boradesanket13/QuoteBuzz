@@ -3,6 +3,25 @@
 Contributions to open source is an absolute must for beginner and newbie developers to sharpen their skills and also learn by doing. Moreover contributing to different open source projects helps in networking with like minded individuals. 
 Now this project also welcomes contributions from like minded developers to improve this web app and also enhance it. So if you notice any bug that is present in this app you can simply create a pull request by forking this repo and open an issue with the tag bug, similarly for enhancement you can open with tag enhancement and so on.
 
+# Steps to Contribute
+
+1. Search for an open issue and ask to be assigned to it
+2. Fork the Project after you are assigned the issue
+3. Clone the repository (`git clone <repolink>`)
+4. Create your another Branch (`git checkout -b <branchname>`)
+5. Add your changes (`git add .`)
+6. Commit your Changes (`git commit -m 'Add some newFeature'`)
+7. Push to the Branch (`git push origin <branchname>`)
+8. Open a Pull Request :tada:
+
+## Pull Request Guidelines
+
+1. Make sure your code is clean and formatted.
+2. Make sure you have tested your code.
+3. Write a detailed description what you added or changed.
+4. Now pat yourself on the back and wait for your pull request to be checked and merged.
+5. :tada: Your PR will be labeled with the `hacktoberfest-accepted` label!
+
 Now the steps for contributing to this repo includes:
 
 1. In order to contribute to this repo at first check for existing issues under the Issues tab or add your own issue and wait for it to be assigned to you.
