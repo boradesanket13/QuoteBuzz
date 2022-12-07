@@ -1,6 +1,7 @@
 let btn = document.querySelector('#new-quote');
 let quote = document.querySelector('.quote');
 let person = document.querySelector('.person');
+let soundBtn = document.querySelector('.sound');
 const twitterBtn = document.getElementById('twitter');
 const copyBtn = document.getElementById('copy');
 const quoteText = document.getElementById('quote');
@@ -23,6 +24,11 @@ function copyQuote() {
   const author = authorText.innerText;
   navigator.clipboard.writeText(`${quote} - ${author}`);
 }
+//speechsynthesis of random quotes/data
+soundBtn.addEventListener("click",()=>{
+  let utterance = new SpeechSynthesisUtterance(`${quoteText.innerText} by ${authorText.innerText}`);
+  speechSynthesis.speak(utterance);
+});
 
 const backgroundImages = [
   'bg.jpg',
