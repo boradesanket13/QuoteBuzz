@@ -154,11 +154,20 @@ button:active {
 }
 
 .btn-1{
-    margin-top: -40rem;
+    margin-top: -38.5rem;
     margin-left:50rem;
+    position: absolute;
 }
 
 .btn-2{
-    margin-top: -2.5rem;
+    margin-top: -38.5rem;
     margin-left: 42rem;
+    position: absolute;
 }
+
+.btn-3{
+    margin-top: -38.5rem;
+    margin-left: -20rem;
+    position: absolute;
+}
+

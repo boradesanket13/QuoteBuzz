@@ -86,3 +86,7 @@ btn.addEventListener("click", async () => {
 
 twitterBtn.addEventListener('click', tweetQuote);
 copyBtn.addEventListener('click', copyQuote);
+
+
+
+
