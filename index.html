@@ -58,9 +58,26 @@
 
 
 </head>
-
+<div class="navbar">
+    <div class="links">
+        <a href="#" class="active" onclick="linkClick(1)" id="1">Home</a>
+        <a href="#" onclick="linkClick(2)" id="2">Authors</a>
+        <a href="#" onclick="linkClick(3)" id="3">Topics</a>
+        <a href="#" onclick="linkClick(4)" id="4">Contact</a>
+    </div>
+    <div class="buttons">
+        <button class="btn-1" >
+            <a href="signup.html" style="text-decoration:none ;color:black">Sign Up</a>
+            
+        </button>
+        <button class="btn-2" >
+            <a href="signin.html" style="text-decoration:none ;color:black">Sign In</a>
+            
+        </button>
+    </div>
+</div>
 <body>
-   
+    
     <!-- Random Quote Generator -->
     <div class="container">
         <div class="heading">
@@ -75,32 +92,25 @@
             </p>
             <p class="person" id="person">C. JoyBell C.</p>
             <div class="button-container">
-                <button class="twitter-button" id="twitter" title="Tweet This!">
+                <button class="twitter-button box-btn" id="twitter" title="Tweet This!">
                     <i class="fab fa-twitter"></i>
                     Tweet This
                 </button>
-                <button class="button" id="new-quote">
+                <button class="button box-btn" id="new-quote">
                     <i class="fa-solid fa-quote-right"></i>
                     Next Quote
                 </button>
-                <button class="twitter-button" id="copy">
+                <button class="twitter-button box-btn" id="copy">
                     <i class="fa-solid fa-copy"></i>
                     Copy
                 </button>
-                <button class="sound" id="sound">
+                <button class="sound box-btn" id="sound">
                     <i class="fas fa-volume-up"></i>
                     sound
                 </button>
             </div>
         </div>
-        <button class="btn-1" >
-            <a href="signup.html" style="text-decoration:none ;color:black">Sign Up</a>
-            
-        </button>
-        <button class="btn-2" >
-            <a href="signin.html" style="text-decoration:none ;color:black">Sign In</a>
-            
-        </button>
+        
     </div>
 
 
