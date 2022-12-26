@@ -7,6 +7,7 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -25,6 +26,62 @@ body {
     width: 600px;
     height: 450px;
     opacity: .90;
+}
+
+.navbar{
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    top: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 720px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.links{
+    display: flex;
+    gap: 35px;
+}
+.links a{
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: lighter;
+    color: #6f7174;
+}
+.links a:hover{
+    color: #000;
+}
+
+.links a.active{
+    /* text-decoration: underline;
+    text-underline-offset: 8px; */
+    color: #000;
+    font-weight: bolder;
+
+}
+
+.buttons{
+    display: flex;
+    gap: 15px;
+}
+
+.btn-1, .btn-2{
+    cursor: pointer;
+    width: max-content;
+    font-size: 0.8rem;
+    height: 2.5rem;
+    border:1px solid black;
+    border-radius: 80px;
+    color: rgb(0, 0, 0);
+    background: rgba(223, 223, 223, 0.446);
+    outline: none;
+    backdrop-filter: blur(40px);
+    padding: 0.5rem 1.8rem;
+}
+.btn-1:hover, .btn-2:hover{
+    background: rgb(227, 226, 226);
 }
 
 .heading {
@@ -67,7 +124,7 @@ body {
     /* text-transform: uppercase; */
 }
 
-button {
+.box-btn {
     cursor: pointer;
     width: max-content;
     font-size: 0.8rem;
@@ -153,7 +210,7 @@ button:active {
     
 }
 
-.btn-1{
+/* .btn-1{
     margin-top: -40rem;
     margin-left:50rem;
 }
@@ -161,4 +218,4 @@ button:active {
 .btn-2{
     margin-top: -2.5rem;
     margin-left: 42rem;
-}
+} */

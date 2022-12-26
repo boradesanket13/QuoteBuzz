@@ -86,3 +86,18 @@ btn.addEventListener("click", async () => {
 
 twitterBtn.addEventListener('click', tweetQuote);
 copyBtn.addEventListener('click', copyQuote);
+
+function linkClick(id){
+  const clicked = document.getElementById(id);
+  if(!clicked.classList.contains('active')){
+    const active = document.getElementsByClassName('active');
+    Array.from(active).forEach(element => {
+      element.classList.remove('active');
+      // console.log(element);
+    });
+    // console.log(active);
+    clicked.classList.add('active');
+    clicked.style.transitionTimingFunction="ease-out";
+    clicked.style.transitionDuration=".3s"
+  }
+}
