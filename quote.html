@@ -25,7 +25,7 @@
 </head>
 <div class="navbar">
     <div class="links">
-        <a href="#" class="active" onclick="linkClick(1)" id="1">Home</a>
+        <a href="index.html" class="active" onclick="linkClick(1)" id="1">Home</a>
         <a href="authors.html" onclick="linkClick(2)" id="2">Authors</a>
         <a href="#" onclick="linkClick(3)" id="3">Topics</a>
         <a href="#" onclick="linkClick(4)" id="4">Contact</a>
@@ -57,10 +57,9 @@
         <div class="main-content">
             <p class="quote" id="q">
 
-               hello 
 
             </p>
-            <p class="person" id="p">c.hello</p>
+            <p class="person" id="p"></p>
             <div class="button-container">
                 <button class="twitter-button box-btn" id="twitter" title="Tweet This!">
                     <i class="fab fa-twitter"></i>
@@ -80,28 +79,55 @@
 
     </div>
 
-   
+
     <script src="https://kit.fontawesome.com/47ff7ea1ff.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script>
 
-        var author = document.getElementById('p');
-        var quote = document.getElementById('q');
-        console.log(p)
+        const author = document.getElementById('p');
+        const quote = document.getElementById('q');
         fetch('https://zenquotes.io/api/today')
             .then(res => {
-               return res.json()
-                
+                return res.json()
+
             })
-            .then(data=>{
+            .then(data => {
                 console.log(data)
-                author.innerHTML=data[0].a;
-                quote.innerHTML=data[0].q;
+                author.innerHTML = data[0].a;
+                quote.innerHTML = data[0].q;
+
             })
-            
+
             .catch(err => {
                 console.log(err)
             })
+
+
+        const twitterbtn = document.getElementById('twitter')
+        const copybtn = document.getElementById('copy')
+        const soundbtn = document.getElementById('sound')
+        
+
+        twitterbtn.addEventListener('click', () => {
+            const quotetext = quote.innerText
+            const authorname = author.innerText
+            const twitterUrl = `https://twitter.com/intent/tweet?text=${quotetext} - ${authorname}`;
+            window.open(twitterUrl, '_blank');
+        })
+
+        copybtn.addEventListener('click', () => {
+            const quotetext = quote.innerText
+            const authorname = author.innerText
+            navigator.clipboard.writeText(`${quotetext} - ${authorname}`);
+            alert('Copied to clipboard!')
+        })
+
+        soundbtn.addEventListener('click', () => {
+            const quotetext = quote.innerText
+            const authorname = author.innerText
+            let utterance = new SpeechSynthesisUtterance(`${quotetext} by ${authorname}`);
+            speechSynthesis.speak(utterance);
+        })
 
 
 
