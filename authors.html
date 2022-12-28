@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL AUTHORS</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<div class="navbar">
+    <div class="links">
+        <a href="#" class="active" onclick="linkClick(1)" id="1">Home</a>
+        <a href="#" onclick="linkClick(2)" id="2">Authors</a>
+        <a href="#" onclick="linkClick(3)" id="3">Topics</a>
+        <a href="#" onclick="linkClick(4)" id="4">Contact</a>
+    </div>
+    <div class="buttons">
+        <button class="btn-1">
+            <a href="signup.html" style="text-decoration:none ;color:black">Sign Up</a>
+
+        </button>
+        <button class="btn-2">
+            <a href="signin.html" style="text-decoration:none ;color:black">Sign In</a>
+
+        </button>
+        <button class="btn-2">
+            <a href="quote.html" style="text-decoration:none ;color:black">Quote of the day</a>
+
+        </button>
+    </div>
+</div>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h2>Authors List</h2>
+        </div>
+
+        <div class="main-content" id="main-content">
+
+
+            <ul id="list">All Authors</ul>
+        </div>
+
+
+
+    </div>
+    <script>
+        const AUTHORLIST = [];
+
+        const authorlist = document.getElementById('main-content')
+
+
+        const Authors = async () => {
+
+            for (var i = 0; i < 10; i++) {
+                await fetch('https://api.quotable.io/random')
+                    .then(res =>
+                        res.json()
+                    )
+                    .then(data => {
+
+                        console.log(data)
+                        AUTHORLIST.push(data.author)
+                        // console.log(AUTHORLIST)
+                        // authorlist.innerHTML=data.author
+
+
+                    })
+                    .catch(err => console.log(err))
+
+            }
+
+
+        }
+        Authors();
+
+
+        console.log(AUTHORLIST)
+        function itemslist() {
+            for (var j = 0; j < AUTHORLIST.length; j++) {
+                authorlist += ` <li>${AUTHORLIST[j]}</li>`
+
+            }
+        }
+
+        // authorlist.innerHTML = `
+        // <ol>
+        //     ${itemslist()}
+        //     </ol>`;
+
+
+
+    </script>
+
+</body>
+
+</html>
