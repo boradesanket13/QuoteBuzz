@@ -52,7 +52,7 @@
         const authorlist = document.getElementById("list");
 
         const Authors = async () => {
-            for (var i = 0; i < 20; i++) {
+            for (var i = 0; i < 15; i++) {
                 await fetch("https://api.quotable.io/random")
                     .then((res) => res.json())
                     .then((data) => {
