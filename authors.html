@@ -41,55 +41,37 @@
         <div class="main-content" id="main-content">
 
 
-            <ul id="list">All Authors</ul>
+            <ul id="list" ">All Authors</ul>
         </div>
 
 
 
     </div>
     <script>
-        const AUTHORLIST = [];
-
-        const authorlist = document.getElementById('main-content')
-
+        const authors = [];
+        const authorlist = document.getElementById("list");
 
         const Authors = async () => {
-
-            for (var i = 0; i < 10; i++) {
-                await fetch('https://api.quotable.io/random')
-                    .then(res =>
-                        res.json()
-                    )
-                    .then(data => {
-
+            for (var i = 0; i < 20; i++) {
+                await fetch("https://api.quotable.io/random")
+                    .then((res) => res.json())
+                    .then((data) => {
                         console.log(data)
-                        AUTHORLIST.push(data.author)
-                        // console.log(AUTHORLIST)
-                        // authorlist.innerHTML=data.author
-
-
+                        authors.push(data.author);
                     })
-                    .catch(err => console.log(err))
-
+                    .catch((err) => console.log(err));
             }
-
-
-        }
+            appendDom();
+        };
         Authors();
 
-
-        console.log(AUTHORLIST)
-        function itemslist() {
-            for (var j = 0; j < AUTHORLIST.length; j++) {
-                authorlist += ` <li>${AUTHORLIST[j]}</li>`
-
+        let appendDom =async () => {
+                for (let x of authors) {
+                const li = document.createElement("li");
+                li.innerText = `${x}`;
+                await authorlist.appendChild(li);
             }
-        }
-
-        // authorlist.innerHTML = `
-        // <ol>
-        //     ${itemslist()}
-        //     </ol>`;
+        };
 
 
 
