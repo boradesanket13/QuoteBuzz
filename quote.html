@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Meta Tags-->
+
+
+    <title>QuoteBuzz</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icon/favicon-16x16.png">
+    <link rel="manifest" href="images/icon/site.webmanifest">
+
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+<div class="navbar">
+    <div class="links">
+        <a href="#" class="active" onclick="linkClick(1)" id="1">Home</a>
+        <a href="authors.html" onclick="linkClick(2)" id="2">Authors</a>
+        <a href="#" onclick="linkClick(3)" id="3">Topics</a>
+        <a href="#" onclick="linkClick(4)" id="4">Contact</a>
+    </div>
+    <div class="buttons">
+        <button class="btn-1">
+            <a href="signup.html" style="text-decoration:none ;color:black">Sign Up</a>
+
+        </button>
+        <button class="btn-2">
+            <a href="signin.html" style="text-decoration:none ;color:black">Sign In</a>
+
+        </button>
+        <button class="btn-2">
+            <a href="authors.html" style="text-decoration:none ;color:black">List of Authors</a>
+
+        </button>
+    </div>
+</div>
+
+<body>
+
+    <!-- Random Quote Generator -->
+    <div class="container">
+        <div class="heading">
+            <h2>Quote of the day</h2>
+        </div>
+
+        <div class="main-content">
+            <p class="quote" id="q">
+
+               hello 
+
+            </p>
+            <p class="person" id="p">c.hello</p>
+            <div class="button-container">
+                <button class="twitter-button box-btn" id="twitter" title="Tweet This!">
+                    <i class="fab fa-twitter"></i>
+                    Tweet This
+                </button>
+
+                <button class="twitter-button box-btn" id="copy">
+                    <i class="fa-solid fa-copy"></i>
+                    Copy
+                </button>
+                <button class="sound box-btn" id="sound">
+                    <i class="fas fa-volume-up"></i>
+                    sound
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+   
+    <script src="https://kit.fontawesome.com/47ff7ea1ff.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+
+        var author = document.getElementById('p');
+        var quote = document.getElementById('q');
+        console.log(p)
+        fetch('https://zenquotes.io/api/today')
+            .then(res => {
+               return res.json()
+                
+            })
+            .then(data=>{
+                console.log(data)
+                author.innerHTML=data[0].a;
+                quote.innerHTML=data[0].q;
+            })
+            
+            .catch(err => {
+                console.log(err)
+            })
+
+
+
+
+    </script>
+</body>
+
+</html>
