@@ -174,6 +174,49 @@ button:active {
   color: #08273f;
 }
 
+.topics-cont{
+    display: none;
+}
+.all-tags{
+    background-color: rgba(255, 255, 255, 0.514);
+    color: black;
+    backdrop-filter: blur(30px);
+    padding: 10px 0px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px;
+
+}
+.tags-cont{
+    margin-top: 30px;
+    height: 500px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+    background-color: rgba(255, 255, 255, 0.514);
+    color: black;
+    font-size: 19px;
+    backdrop-filter: blur(30px);
+    padding: 10px 30px;
+    border-radius: 15px;
+    width: 400px;
+    align-items: center;
+    box-shadow: 0 0 10px;
+
+}
+.tags-cont div{
+    width: 100%;
+    padding: 8px 0px;
+    cursor: pointer;
+    border-radius: 10px;
+    /* transition: .2s ease-out; */
+}
+.tags-cont div:hover{
+    background-color: #fff;
+    outline-color: #000;
+}
+
 @media (max-width: 600px) {
     .container {
         width: 80%;

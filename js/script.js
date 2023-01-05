@@ -6,6 +6,10 @@ const twitterBtn = document.getElementById('twitter');
 const copyBtn = document.getElementById('copy');
 const quoteText = document.getElementById('quote');
 const authorText = document.getElementById('person');
+const cont1 = document.getElementById('container1');
+const cont3 = document.getElementById('container3');
+const topic = document.getElementById('3');
+const tag_cont = document.getElementById('tags-cont')
 const body = document.body;
 
 
@@ -99,5 +103,33 @@ function linkClick(id){
     clicked.classList.add('active');
     clicked.style.transitionTimingFunction="ease-out";
     clicked.style.transitionDuration=".3s"
+
+    
+    if(id === 3){
+      cont3.style.display = 'block';
+      cont1.style.display = 'none';
+    }
+    else if(id === 1){
+      cont1.style.display = 'block';
+      cont3.style.display = 'none';
+    }
   }
 }
+
+topic.addEventListener('click', async () => {
+  const tagsdata = await axios.get("https://api.quotable.io/tags");
+  console.log(tagsdata);
+  tag_cont.innerHTML = '';
+
+  adder='';
+  tagsdata.data.forEach(tag => {
+    adder+=`
+    <div className="tag">
+      <div className="tagName">${tag.name}</div>
+    </div>
+    `
+  })
+  tag_cont.innerHTML = adder;
+
+
+});
