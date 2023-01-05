@@ -101,3 +101,41 @@ function linkClick(id){
     clicked.style.transitionDuration=".3s"
   }
 }
+
+function OnChange(){
+  let url = "";
+  let flag = true;
+  let pgNum = Math.floor(Math.random() * (4 - 1) + 1);
+  let picNum = Math.floor(Math.random() * (10 - 0) + 0);
+
+  url = `https://api.unsplash.com/search/photos?page=${pgNum}&query=${
+    queryText[Math.floor(Math.random() * queryText.length)]
+  }&orientation=landscape`;
+  resStr = ".results[0].urls.full";
+  const fetchImages = async () => {
+    const res = await axios.get(url, {
+      headers: {
+        Authorization: "Client-ID CxQIiufAcwII5UXQuqn0dfm8KAFmJLCeKBBVNcidvUs",
+      },
+    });
+    if (flag) {
+      body.style.backgroundImage = `url('${res.data.results[picNum].urls.full}')`;
+    } else {
+      console.log(res.data.urls.full);
+      body.style.backgroundImage = `url('${res.data.urls.full}')`;
+    }
+  };
+
+  fetchImages();
+
+  var x=document.getElementById("person").value;
+  const api_url = `https://api.quotable.io/random?author=${x}`;
+ 
+  async function getapi(url) {
+    const response = await fetch(url);
+    var quoteData = await response.json();
+    quote.innerText = quoteData.content;
+    person.innerText = quoteData.author;
+}
+getapi(api_url);
+}
