@@ -2,16 +2,24 @@ let btn = document.querySelector('#new-quote');
 let quote = document.querySelector('.quote');
 let person = document.querySelector('.person');
 let soundBtn = document.querySelector('.sound');
+const backBtn = document.getElementById('back')
 const twitterBtn = document.getElementById('twitter');
 const copyBtn = document.getElementById('copy');
 const quoteText = document.getElementById('quote');
 const authorText = document.getElementById('person');
 const cont1 = document.getElementById('container1');
+const cont2 = document.getElementById('auth-profile');
 const cont3 = document.getElementById('container3');
 const topic = document.getElementById('3');
 const tag_cont = document.getElementById('tags-cont')
 const body = document.body;
 
+
+//go back 
+const back = () => {
+  cont1.style.display = 'block';
+  cont2.style.display = 'none';
+} 
 
 
 // Tweet Quote
@@ -52,6 +60,7 @@ const backgroundImages = [
 const queryText = ["motivation", "success", "hardwork", "inspiration"];
 
 btn.addEventListener("click", async () => {
+  let slug = '';
   let url = "";
   let flag = true;
   let pgNum = Math.floor(Math.random() * (4 - 1) + 1);
@@ -84,7 +93,32 @@ btn.addEventListener("click", async () => {
   console.log(quoteData);
   quote.innerText = quoteData.data.content;
   person.innerText = quoteData.data.author;
+  slug = quoteData.data.authorSlug;
+  console.log(slug);
+  const authdata = await axios.get(`https://api.quotable.io/authors?slug=${slug}`);
+  const data = authdata.data.results[0];
+  console.log(data);
+
+  person.addEventListener('click', async () => {
+    cont1.style.display = 'none';
+    cont2.style.display = 'block';
+    
+    const name = document.getElementById('auth-name');
+    const bio = document.getElementById('auth-bio');
+    const link = document.getElementById('auth-link');
+    const quote = document.getElementById('auth-quote');
+
+    name.innerText = data.name;
+    bio.innerText = data.bio;
+    link.innerText = data.link;
+    link.href = data.link;
+    quote.innerText = data.quoteCount
+  })
 });
+
+// const authProfile = (id) => {
+//   console.log(id);
+// }
 
 // Tweetquote
 
@@ -108,9 +142,11 @@ function linkClick(id){
     if(id === 3){
       cont3.style.display = 'block';
       cont1.style.display = 'none';
+      cont2.style.display = 'none';
     }
     else if(id === 1){
       cont1.style.display = 'block';
+      cont2.style.display = 'none';
       cont3.style.display = 'none';
     }
   }
