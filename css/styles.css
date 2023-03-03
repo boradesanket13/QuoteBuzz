@@ -121,6 +121,7 @@ body {
     color: rgb(2, 4, 53);
     font-size: 1.5rem;
     margin-top: 20px;
+    cursor: pointer;
     /* text-transform: uppercase; */
 }
 
@@ -215,6 +216,31 @@ button:active {
 .tags-cont div:hover{
     background-color: #fff;
     outline-color: #000;
+}
+.auth-profile{
+    display: none;
+    background-color: rgba(255, 255, 255, 0.514);
+    color: black;
+    font-size: 19px;
+    backdrop-filter: blur(30px);
+    padding: 10px 30px;
+    border-radius: 15px;
+    width: 600px;
+    align-items: center;
+    box-shadow: 0 0 10px;
+}
+.num-cont{
+    margin-top: 20px;
+}
+
+.back{
+    cursor: pointer;
+    margin-top: 50px;
+    padding: 9px 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    width: fit-content;
+    outline: 1.5px solid black;
 }
 
 @media (max-width: 600px) {
